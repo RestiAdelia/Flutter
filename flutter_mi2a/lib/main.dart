@@ -4,6 +4,7 @@ import 'package:flutter_mi2a/screen/page_RowColumn.dart';
 import 'package:flutter_mi2a/screen/page_column.dart';
 import 'package:flutter_mi2a/screen/page_list_horizontal.dart';
 import 'package:flutter_mi2a/screen/page_row.dart';
+import 'package:flutter_mi2a/screen/page_search_list.dart';
 import 'package:flutter_mi2a/screen/page_url_gambar.dart';
 
 
@@ -117,6 +118,14 @@ class PageUtama extends StatelessWidget {
                 },
                   color: Colors.orange,
                   child: Text('Page Gambar',style: TextStyle(fontSize: 14, color: Colors.white),),
+                ),
+                MaterialButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)
+                  =>PageSearchList()
+                  ));
+                },
+                  color: Colors.orange,
+                  child: Text('Page List Search',style: TextStyle(fontSize: 14, color: Colors.white),),
                 ),
               ],
             )
